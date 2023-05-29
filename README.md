@@ -1,4 +1,5 @@
-![Tiktok-voice-generator](https://github.com/thegraydream/TikTok-TTS/assets/125685786/d85978fb-4079-4ff9-b851-3c6100448bd5)
+![](https://img.shields.io/badge/TikTok%20TTS-Python-blue.svg)\
+![](https://github.com/thegraydream/TikTok-TTS/assets/125685786/d85978fb-4079-4ff9-b851-3c6100448bd5)
 # 🔊 TikTok TTS 
 A python script That uses the TTS TikTok API!
 
