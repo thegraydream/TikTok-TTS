@@ -1,10 +1,13 @@
-# ✨ TikTok TTS 🔊
+# 🔊 TikTok TTS 
 A python script That uses the TTS TikTok API!
 
-# 🔧 Easy Installation 🔧
+# 🔧 Easy Installation 
 All you need to install the program is python 3! 
 
-# 🎀 Voices 🎀
+# 🔧 Configuration
+When you launch it, a config.json file will be created, in which you can modify the voice and export!
+
+# 🎀 Voices 
 ### **English US**
 en_us_001 ∙ Female\
 en_us_006 ∙ Male 1\
