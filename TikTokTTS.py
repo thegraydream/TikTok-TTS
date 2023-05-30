@@ -40,20 +40,20 @@ def texttotiktoktts(text, voice="en_us_001", path=""):
 
           # ╭─── Check Version ───╮ #
           if version == True:
-                open('version', 'w', encoding='utf-8').write('1.0.1')
+                open('version', 'w', encoding='utf-8').write('1.0.2')
                 try:
                     if not requests.get('https://raw.githubusercontent.com/thegraydream/TikTok-TTS/master/version').text.strip() == open('version', 'r', encoding='utf-8').read():
                         print(f'{reset}[{red}>{reset}] {red}You are not using the latest version of TikTok TTS, please update it on "https://github.com/thegraydream/TikTok-TTS".{reset}')
                     
                         r = input('Would you like to download the latest version? (y/n) > ').strip()
                         if r == "y":
-                            for dow in json.loads(requests.get(f'https://raw.githubusercontent.com/thegraydream/TikTok-TTS/master/update.json').text)["version"]:
+                            for dow in json.loads(requests.get(f'https://raw.githubusercontent.com/thegraydream/TikTok-TTS/master/update.json').text)["update"]:
                                 print(f'{reset}[{green}>{reset}] {green}Downloading {dow}{reset}')
                                 try:
                                     content = requests.get(f'https://raw.githubusercontent.com/thegraydream/TikTok-TTS/master/{dow}').text
-                                    if content.text == "404: Not Found":print(f'{reset}[{red}>{reset}] {red} We cannot find the file {dow}')
+                                    if content == "404: Not Found":print(f'{reset}[{red}>{reset}] {red} We cannot find the file {dow}')
                                     else:
-                                        open(dow, 'w', encoding='utf-8').write(content.text)
+                                        open(dow, 'w', encoding='utf-8').write(content)
                                 except:
                                     print(f'{reset}[{red}<{reset}] {red} An error occurred while downloading the latest version of {dow}')
                                     return False, f'Update download error ({dow})'
