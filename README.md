@@ -6,8 +6,8 @@ A python script That uses the TTS TikTok API!
 # 🔧 Easy Installation 
 All you need to install the program is python 3! 
 
-# 🔧 Configuration
-When you launch it, a config.json file will be created, in which you can modify the voice and export!
+# 📌 Configuration
+To use it, you just need to call the **"texttotiktoktts(text, voice, path)"** function from any program using **"from TikTokTTS import texttotiktoktts"**.
 
 # 🎀 Voices 
 ### **English US**
