@@ -40,7 +40,7 @@ def texttotiktoktts(text, voice="en_us_001", path=""):
 
           # ╭─── Check Version ───╮ #
           if version == True:
-                open('version', 'w', encoding='utf-8').write('1.0.2')
+                open('version', 'w', encoding='utf-8').write('1.0.1')
                 try:
                     if not requests.get('https://raw.githubusercontent.com/thegraydream/TikTok-TTS/master/version').text.strip() == open('version', 'r', encoding='utf-8').read():
                         print(f'{reset}[{red}>{reset}] {red}You are not using the latest version of TikTok TTS, please update it on "https://github.com/thegraydream/TikTok-TTS".{reset}')
